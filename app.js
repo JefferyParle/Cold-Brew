@@ -8,13 +8,13 @@ if (localStorage.getItem("wellnessDataLocal")) {
 
 // Background Handler
 fetch(
-  // "https://api.unsplash.com/photos/random?orientation=landscape&query=coffee-shop", //REAL URL, USE IN PRODUCTION
-  "https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=coffee-shop"
-  // {
-  //   headers: {
-  //     Authorization: `Client-ID fvAmCkmQSj1qJQWU8VrNx6V6OkozjkhBNyJ2Q2XSPnY`,
-  //   },
-  // }
+  "https://api.unsplash.com/photos/random?orientation=landscape&query=coffee-shop", //REAL URL, USE IN PRODUCTION
+  // "https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=coffee-shop"
+  {
+    headers: {
+      Authorization: `Client-ID fvAmCkmQSj1qJQWU8VrNx6V6OkozjkhBNyJ2Q2XSPnY`,
+    },
+  }
 )
   .then((res) => {
     if (!res.ok) {
