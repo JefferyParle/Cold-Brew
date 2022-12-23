@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cold Brew</title>
+    <!-- Style Elements -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./cold-brew-icon.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="champion-checklist">
+      <h3>Champion Checklist</h3>
+      <div id="list-cont"></div>
+    </div>
+    <div id="weather-cont"></div>
+    <div class="time-search">
+      <h2 id="time"></h2>
+      <form id="search-form">
+        <input
+          type="text"
+          name="google-search"
+          id="google-search"
+          placeholder="Search about whatever..."
+        />
+      </form>
+    </div>
+    <h5 id="auth-attr">Photo by: <a id="bg-author" target="_blank"></a></h5>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
